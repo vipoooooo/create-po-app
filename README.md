@@ -108,7 +108,8 @@ export default {
   - go to PlanetScale's console
   - Click 'Connect'
   - Choose Connect with: `Prisma`
-  - Copy only url, without the `DATABASE_URL=`
+  - Copy only `url`, without the DATABASE_URL=
+  - at the end of url, replace `?sslaccept=strict` with `?ssl={"rejectUnauthorized":true}`
 
 3. then go to `.gitignore` file, and add one this line:
 ```
